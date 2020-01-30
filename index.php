@@ -23,9 +23,10 @@
         </header>
 
     <?php
-        print_r($_SESSION);
+        foreach ($_SESSION['fruitList'] as $fruit) {
+            echo $fruit;
+        }
     ?>
     </div>
 </body>
 </html>
- 
